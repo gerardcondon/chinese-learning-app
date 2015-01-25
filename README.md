@@ -70,6 +70,8 @@ someway to categorise lists
 
 * Gravatar for user profile. Some sort of reusable user profile stuff. Should be able to reuse the same user code for each rails app. How would you reuse the same user code in multiple rails apps?
 
+* Refactor to use the foreigner gem
+
 # Entities
 
 * User
