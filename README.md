@@ -16,19 +16,15 @@
 
 * Each translation entry also has the pinyin for the Hanzi. Pinyin is displayed using inline tones over the appropriate letters. The words are also colour coded depending on the tone.
 
-We could have the user enter the pinyin
+# TODO
 
-the app will automatically find the correct pinyin and tone
+* We could have the user enter the pinyin and have the app automatically find the correct pinyin and tone
 
-someway to categorise lists
+* someway to categorise lists
   - lists could belong to a category
   - lists could be categories
 
-# TODO
-
 * Investigate where to get free photos. Or could pay for some?
-
-* Convert erb to haml
 
 # Technologies
 
@@ -70,9 +66,11 @@ someway to categorise lists
 
 * Gravatar for user profile. Some sort of reusable user profile stuff. Should be able to reuse the same user code for each rails app. How would you reuse the same user code in multiple rails apps?
 
-* Refactor to use the foreigner gem
+* Investigate the foreigner gem. Should I use something like this?
 
 # Entities
+
+Initial thoughts on the entities I will need in the system. Could I generate this from the database once implemented?
 
 * User
   - name: string
@@ -81,7 +79,8 @@ someway to categorise lists
 
 * List
   - belongs to user
-  - name: string
+  - title: string
+  - description: text
   - has many translation entries
 
 * Translation Entry
