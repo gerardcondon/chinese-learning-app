@@ -26,6 +26,8 @@
 
 * Investigate where to get free photos. Or could pay for some?
 
+* Devise action mailer config in production. Mandrill? Gmail?
+
 # Technologies
 
 * Rails

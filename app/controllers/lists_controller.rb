@@ -1,7 +1,8 @@
 class ListsController < ApplicationController
 	respond_to :html
+	before_action :authenticate_user!
 
-  expose(:lists) { List.order(:title) }
+  expose(:lists) { current_user.lists }
   expose(:list, attributes: :list_params)
 
   def create
