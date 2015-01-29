@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  resources :lists
+  resources :lists do
+    resources :translations
+  end
   root 'lists#index'
 end

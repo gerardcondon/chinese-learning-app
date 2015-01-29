@@ -27,6 +27,6 @@ class ListsController < ApplicationController
 	end
 
 	def list_params
-		params.require(:list).permit(:title, :description)
+		params.require(:list).permit(:title, :description, tranlsations_attributes: [:id, :hanzi, :english, :_destroy])
 	end
 end

@@ -1,5 +1,20 @@
 = simple_form_for list do |f|
+	- if list.errors.any?
+			#errors
+				%p
+					= list.errors.count
+					Prevented this list from saving
+				%ul
+					- list.errors.full_messages.each do |msg|
+						%li= msg
+
 	= f.input :title
 	= f.input :description
+
+	%h3 Translations
+	= f.simple_fields_for :translations do |translation|
+		= render 'translation_fields', f: translation
+		.links
+			= link_to_add_association 'Add Translation', f, :translations, class: "btn btn-default add-button"
 
 	= f.button :submit
