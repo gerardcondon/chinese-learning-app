@@ -28,6 +28,8 @@
 
 * Devise action mailer config in production. Mandrill? Gmail?
 
+* Remove original image from paperclip storage
+
 # Technologies
 
 * Rails

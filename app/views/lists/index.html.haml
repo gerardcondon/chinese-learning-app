@@ -1,4 +1,5 @@
 - lists.each do |list|
 	%h2= link_to list.title, list
+	%p= pluralize(list.translations.size, "Item")
 
 = link_to "Add New List", new_list_path

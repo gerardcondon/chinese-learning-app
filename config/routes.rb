@@ -4,5 +4,11 @@ Rails.application.routes.draw do
   resources :lists do
     resources :translations
   end
-  root 'lists#index'
+
+  # other routes ...
+  StaticPagesController.action_methods.each do |action|
+    get "/#{action}", to: "static_pages##{action}", as: "#{action}_page"
+  end
+
+  root 'static_pages#home'
 end
