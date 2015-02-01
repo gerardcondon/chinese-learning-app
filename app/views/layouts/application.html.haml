@@ -11,14 +11,24 @@
 %body
 	%header
 		.wrapper.clearfix
-		#logo= link_to "Hanzi", root_path
-		%nav
-			- if user_signed_in?
-				= link_to current_user.name, edit_user_registration_path
-				= link_to "Add new list", new_list_path, class: "button"
-			- else
-				= link_to "Sign In", new_user_session_path
-				= link_to "Sign Up", new_user_registration_path, class: "button"
+		.navbar.navbar-default.navbar-static-top
+			.container
+				.navbar-header
+					%button.navbar-toggle.collapsed{ "data-toggle".to_sym => "collapse", "data-target".to_sym => ".navbar-collapse"}
+						%span.sr-only= "Toggle navigation"
+						%span.icon-bar
+						%span.icon-bar
+						%span.icon-bar
+					.navbar-brand= link_to "Hanzi", root_path
+
+				.navbar-collapse.collapse
+					%ul.nav.navbar-nav.navbar-right
+						- if user_signed_in?
+							%li= link_to "Add new list", new_list_path, class: "button"
+							%li= link_to current_user.name, edit_user_registration_path
+						- else
+							%button.btn.btn-default.navbar-btn= link_to "Sign In", new_user_session_path
+							%button.btn.btn-default.navbar-btn= link_to "Sign Up", new_user_registration_path, class: "button"
 	%p.notice= notice
 	%p.alert= alert
 
