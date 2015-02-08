@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     resources :translations
   end
 
+  resources :subscriptions
+
   # other routes ...
   StaticPagesController.action_methods.each do |action|
     get "/#{action}", to: "static_pages##{action}", as: "#{action}_page"

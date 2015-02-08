@@ -1,3 +1,17 @@
-%h1 Heading
+.home-main
+	.jumbotron
+		.container
+			.row
+				.col-md-offset-1
+					%h1 Learn Chinese Characters
+			.row
+				.col-md-6.col-md-offset-1
+					%ul.main-list
+						%li Learn Hanzi using pictures and photos.
+						%li Create lists of Hanzi words along with their English translations.
+						%li Take a photo with your phone camera and attach it to each word to improve recall.
+						%li Generate and print flashcards so you can practice anywhere.
+						%li Study on the go with your iPhone or Android smartphone
 
-%p and content
+				.col-md-4
+					= render 'subscriptions/form'

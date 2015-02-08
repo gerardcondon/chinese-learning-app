@@ -57,7 +57,7 @@ gem 'spring',        group: :development
 
 gem 'bootstrap-sass', '~> 3.2.0.2'
 gem 'haml', '~> 4.0.5'
-gem 'simple_form', '~> 3.0.2'
+gem 'simple_form', '~> 3.1.0'
 gem 'decent_exposure'
 gem 'cocoon', '~> 1.2.6'
 gem 'paperclip', '~> 4.2.1'
