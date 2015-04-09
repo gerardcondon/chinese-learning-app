@@ -18,6 +18,41 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-default {
+    background-color: #AAA;
+    border-color: #AAA;
+}
+
 .jumbotron {
-background-image: url("/images/hanzi_crop.png");
-background-size: cover;}
+    background-image: url("/images/hanzi_crop.png");
+    background-size: cover;
+    color: #CCC;
+    padding-top: 20px;
+}
+
+header {
+    background-color: #AAA;
+}
+
+body {
+    background-color: #AAA;
+}
+
+.navbar {
+    a {
+        color: #DDD;
+        text-decoration: none;
+    }
+}
+
+.navbar {
+    .btn {
+        a {
+            color: #AAA;
+        }
+    }
+}
