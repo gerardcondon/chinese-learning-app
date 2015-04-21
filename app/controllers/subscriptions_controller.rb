@@ -5,17 +5,7 @@ class SubscriptionsController < ApplicationController
 
   def create
     subscription.save
-    respond_with(subscription)
-  end
-
-  def update
-    subscription.save
-    respond_with(subscription)
-  end
-
-  def destroy
-  	subscription.destroy
-  	redirect_to root_path
+    render :show
   end
 
 	private

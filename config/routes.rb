@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     resources :translations
   end
 
-  resources :subscriptions
+  resources :subscriptions, only: [:create]
 
   # other routes ...
   StaticPagesController.action_methods.each do |action|
