@@ -21,6 +21,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'minitest'
   gem 'thor'
+  gem 'dotenv-rails'
 end
 
 group :production, :postgresql do
