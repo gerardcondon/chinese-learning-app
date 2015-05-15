@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.4'
+gem 'rails', '4.2.1'
 gem 'devise'
 
 ### OpenShift Online changes:
@@ -22,6 +22,7 @@ group :development, :test do
   gem 'minitest'
   gem 'thor'
   gem 'dotenv-rails'
+  gem "letter_opener"
 end
 
 group :production, :postgresql do
