@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20150205212736) do
 
-  create_table "lists", force: true do |t|
+  create_table "lists", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
     t.integer  "user_id"
@@ -23,14 +23,14 @@ ActiveRecord::Schema.define(version: 20150205212736) do
 
   add_index "lists", ["user_id"], name: "index_lists_on_user_id"
 
-  create_table "subscriptions", force: true do |t|
+  create_table "subscriptions", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "translations", force: true do |t|
+  create_table "translations", force: :cascade do |t|
     t.string   "hanzi"
     t.string   "english"
     t.integer  "list_id"
@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 20150205212736) do
 
   add_index "translations", ["list_id"], name: "index_translations_on_list_id"
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
