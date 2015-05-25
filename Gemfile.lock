@@ -89,6 +89,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    mailkick (0.1.1)
     mime-types (2.5)
     mini_portile (0.6.2)
     minitest (5.6.1)
@@ -185,6 +186,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   letter_opener
+  mailkick (~> 0.1.1)
   minitest
   paperclip (~> 4.2.1)
   pg

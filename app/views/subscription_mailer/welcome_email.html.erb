@@ -6,11 +6,19 @@
   <body>
     Hi, <%= @subscriber.name %>
     
+      <p>
       Thanks for subscribing to the Chinese Learning Application.
+      </p>
+      
+      <p>
       We'll be in touch soon when the site goes live.
+      </p>
     
+      <p>
       Best,<br/>
       Gerard
-    
+      </p>
+      
+      <p>To unsubcribe from these emails please click this link: <%= link_to "Unsubscribe", mailkick_unsubscribe_url %></p>
   </body>
 </html>
