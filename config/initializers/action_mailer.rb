@@ -6,6 +6,7 @@ Rails.application.configure do
     :user_name => Rails.application.secrets.mandrill_username,
     :password  => Rails.application.secrets.mandrill_api_key,
     :authentication => 'login',
-    :domain => 'gerardcondon.com'
+    :domain => 'gerardcondon.com',
+    :openssl_verify_mode => OpenSSL::SSL::VERIFY_NONE
   }
 end
