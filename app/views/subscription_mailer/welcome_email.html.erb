@@ -1,58 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta name="viewport" content="width=device-width" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Thanks for subscribing</title>
-</head>
-
-<body itemscope itemtype="http://schema.org/EmailMessage">
-
-<table class="body-wrap">
-  <tr>
-    <td></td>
-    <td class="container">
-      <div class="content">
-        <table class="main" width="100%" cellpadding="0" cellspacing="0" itemprop="action" itemscope itemtype="http://schema.org/ConfirmAction">
-          <tr>
-            <td class="content-wrap">
-              <meta itemprop="name" content="New Subscriber"/>
-              <table width="100%" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td class="content-block">
-                    <h1>Hi, <%= @subscriber.name %></h1>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="content-block">
-                    Thanks for subscribing to the Chinese Learning Application.
-                  </td>
-                </tr>
-                <tr>
-                  <td class="content-block">
-                    We'll be in touch when the site goes live.
-                  </td>
-                </tr>
-                <tr>
-                  <td class="content-block">
-                    <a href="https://hanzi-gcondon.rhcloud.com">&mdash; Chinese Learning Application</a>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-    </td>
-    <td></td>
-  </tr>
-</table>
-<div class="footer">
-	<table width="100%">
-		<tr>
-			<td class="aligncenter content-block"><%= link_to "Unsubscribe", mailkick_unsubscribe_url %> from these emails.</td>
-		</tr>
-	</table>
-</div></div>
-
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    Hi, <%= @subscriber.name %>
+    
+      <p>
+      Thanks for subscribing to the Chinese Learning Application.
+      </p>
+      
+      <p>
+      We'll be in touch soon when the site goes live.
+      </p>
+    
+      <p>
+      Best,<br/>
+      Gerard
+      </p>
+      
+  </body>
 </html>
